@@ -1,0 +1,94 @@
+//Миксины//
+
+@import "mixin.scss";
+
+//Шрифты по умолчанию//
+
+@import "fonts.scss";
+
+$font-size: 16;
+
+$font-family-MyriadProBold: MyriadProBold;
+$font-family-MyriadProBoldItalic: MyriadProBoldItalic;
+$font-family-MyriadProItalic: MyriadProItalic;
+$font-family-MyriadProRegular: MyriadProRegular;
+
+//Переменные//
+$maxWidthContainer: 1200;
+$md1: 1365.98; 
+$md2: 991.98; 
+$md3: 767.98; 
+$md4: 479.98; 
+$mp1: 679.98;
+
+$maincolor: #f1ac11;
+
+//Обнуление//
+
+
+*{box-sizing: border-box;}
+html,body{font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input{padding: 0; margin: 0; border: 0; }
+input::-ms-clear{display: none;}
+input:focus{outline: none;}
+button {padding: 0;border: none;font: inherit;color: inherit;background-color: transparent;cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a{color: #fff;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul{padding-inline-start: 0!important;margin: 0;}
+ul li {list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: inherit;margin: 0;}
+
+// Стили//
+
+html{
+    height: 100%;
+}
+
+body{
+    color: $maincolor;
+    font-family: $font-family-MyriadProRegular;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    &.lock{
+        overflow: hidden;
+    }
+}  
+
+#map{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: $maxWidthContainer + px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// Подключение остальных стилей //
+
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";
+@import "help.scss";
+
+
+
