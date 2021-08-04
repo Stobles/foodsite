@@ -3,6 +3,7 @@
 }
 
 .main{
+    position: relative;
     @media(min-width: $md1+px){
         height: 100vh;
     }
@@ -18,6 +19,7 @@
         height: 100%;
     }
     &__img{
+        z-index: -1;
         &--first{
             @media(min-width: $md1+px){
                 left: 0;

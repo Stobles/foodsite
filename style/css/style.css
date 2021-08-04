@@ -305,6 +305,9 @@ body.lock {
   width: 100%;
 }
 
+.main {
+  position: relative;
+}
 @media (min-width: 1365.98px) {
   .main {
     height: 100vh;
@@ -325,6 +328,9 @@ body.lock {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+.main__img {
+  z-index: -1;
 }
 @media (min-width: 1365.98px) {
   .main__img--first {
